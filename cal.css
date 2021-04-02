@@ -1,0 +1,103 @@
+
+/*------desktop--------*/
+
+@media(min-width:1024px){
+    body{
+        background:lightcoral;
+    }
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.calculator
+{
+    position: relative;
+    display: grid;
+}
+.calculator .value
+{
+    grid-column: span 4;
+    height: 100px;
+    text-align: right;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.calculator span
+{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background: #0c2835;
+    place-items:center;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.calculator span:active
+{
+    background: #74ff3b;
+    color: #111;
+}
+.calculator span.clear
+{
+    grid-column: span 2;
+    width: 120px;
+    background: #ff3077;
+}
+.calculator span.plus
+{
+    grid-row: span 2;
+    height: 120px;
+}
+.calculator span.equal
+{
+    background: #03b1ff;
+}
+
+    
+
+
+
+    /*------tablets and ipade--------*/
+@media(min-width:769px) and (max-width:1023px){
+    body{
+        background-color: lightcoral;
+    }
+}
+
+
+
+    /*------mobile phones--------*/
+    @media (max-width: 768px){
+        body
+        {
+            font-size:25px;
+        }
+        .calculator span{
+            width:65px;
+        }
+        .calculator span.clear
+        {
+            width:130px;
+        }
+        body{
+            background: white;
+        }
+    }
+    @media(max-width: 468px){
+        body{
+        background: lightblue;
+        }
+    }
